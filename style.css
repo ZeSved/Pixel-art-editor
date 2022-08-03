@@ -9,54 +9,41 @@
 .color-container {
   display: flex;
   gap: 5px;
-  margin-left: 25px;
-  margin-top: 25px;
 }
 
-.color-container > * {
+.color-container > *,
+.clear {
   background-color: #555;
   width: 30px;
   height: 30px;
+  border-radius: 6px;
 }
 
-.color-container > *:nth-child(1) {
-  background-color: #777;
-  margin-right: 20px;
+.clear {
+  width: 100px;
+  border: 0px;
+  margin-left: auto;
+
+  cursor: pointer;
+  
+  color: white;
 }
 
-.color-container > *:nth-child(2) {
-  background-color: #fb5555;
+.wrapper {
+  display: flex;
+  align-items: center;
+  margin-inline: 25px;
+  margin-top: 25px;
 }
-
-.color-container > *:nth-child(3) {
-  background-color: #fb9d55;
-}
-
-.color-container > *:nth-child(4) {
-  background-color: #fbe255;
-}
-
-.color-container > *:nth-child(5) {
-  background-color: #8ffb55;
-}
-
-.color-container > *:nth-child(6) {
-  background-color: #5584fb;
-}
-
-.color-container > *:nth-child(7) {
-  background-color: #d155fb;
-}
-
-.color-container > *:nth-child(8) {
-    background-color: #5a3411;
-  }
 
 .selected {
   outline: white solid 2px;
 }
 
-/* Canvas Styles */
+.center {
+  display: flex;
+  justify-content: center;
+}
 
 .canvas-grid {
   --p-size: 25px;
@@ -68,6 +55,8 @@
   gap: 1px;
 
   margin: 25px;
+
+  user-select: none;
 }
 
 .canvas-grid > * {
