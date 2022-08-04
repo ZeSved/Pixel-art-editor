@@ -3,7 +3,7 @@ import Canvas from './classes/Canvas.js'
 export const colorContainer = document.querySelector('.color-container')
 const clearButton = document.querySelector('.clear')
 
-const canvas = new Canvas(20, 7)
+const canvas = new Canvas(20, 10)
 console.log(canvas)
 
 setupEventListeners()

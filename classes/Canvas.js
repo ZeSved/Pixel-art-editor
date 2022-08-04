@@ -88,7 +88,7 @@ export default class Canvas {
   }
 
   updateCanvasSize() {
-    const pixelWidth = (window.innerWidth - 70) / this.width
+    const pixelWidth = (canvasGrid.offsetWidth - (this.width - 1)) / this.width
 
     canvasGrid.style.setProperty('--p-size', `${pixelWidth}px`)
   }
