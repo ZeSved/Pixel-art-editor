@@ -2,6 +2,8 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 /* Color Picker Styles */
@@ -25,7 +27,7 @@
   margin-left: auto;
 
   cursor: pointer;
-  
+
   color: white;
 }
 
@@ -47,11 +49,12 @@
 
 .canvas-grid {
   --p-size: 25px;
-  --w-h: 20;
+  --width: 20;
+  --height: 20;
 
   display: grid;
-  grid-template-columns: repeat(var(--w-h), var(--p-size));
-  grid-template-rows: repeat(var(--w-h), var(--p-size));
+  grid-template-columns: repeat(var(--width), var(--p-size));
+  grid-template-rows: repeat(var(--height), var(--p-size));
   gap: 1px;
 
   margin: 25px;
