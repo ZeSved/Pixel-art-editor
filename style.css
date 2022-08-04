@@ -42,11 +42,6 @@
   outline: white solid 2px;
 }
 
-.center {
-  display: flex;
-  justify-content: center;
-}
-
 .canvas-grid {
   --p-size: 25px;
   --width: 20;
